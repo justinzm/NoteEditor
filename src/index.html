@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Notepad</title>
+    <link rel="stylesheet" href="./static/css/index.css">
+    <link rel=stylesheet href="./static/codemirror/doc/docs.css">
+    <link rel="stylesheet" href="./static/codemirror/lib/codemirror.css">
+
+    <script src="./static/codemirror/lib/codemirror.js"></script>
+    <script src="./static/codemirror/mode/xml/xml.js"></script>
+  </head>
+  <body>
+    <textarea id="txtEditor"></textarea>
+  </body>
+  <script>
+    var editor = CodeMirror.fromTextArea(document.getElementById("txtEditor"), {
+      mode: "text/html",
+      lineNumbers: true
+    });
+  </script>
+  <style type="text/css">
+    .CodeMirror{
+      height:100%;
+    }
+  </style>
+  <script src="./renderer/ipcRenderer.js"></script>
+</html>
