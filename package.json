@@ -1,7 +1,7 @@
 {
-  "name": "Notepad",
-  "productName": "Notepad",
-  "version": "1.0.0",
+  "name": "NoteEditor",
+  "productName": "NoteEditor",
+  "version": "0.0.1",
   "description": "My Electron application description",
   "main": "src/main.js",
   "scripts": {
